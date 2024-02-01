@@ -52,8 +52,7 @@ public class Calculator : MonoBehaviour
     public void OnClickReceiveAnswerMultiplication()
     {
         _textIncorrectInput.text = "";
-        
-
+       
         if (CheckInput(out decimal numberFirst, out decimal numberSecond))
         {
             _textFinalNumber.text = $"{numberFirst * numberSecond}";
